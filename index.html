@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maverca Demo Reel</title>
-  <style>
-    /* Optional: Make the video fill the container */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codélandes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .video-container iframe {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <h1>Codélandes</h1>
+    <p>Specializing in <strong>app development consulting</strong>, <strong>video game</strong> and <strong>sport tech mobile apps</strong>, <strong>training</strong>, and <strong>Bluetooth</strong> technology solutions.</p>
 
-  <h1>Maverca Demo Reel</h1>
-  <p>by <strong>Matthieu Mauduit</strong> • April 29, 2025</p>
-
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/xFwJKydc8Hk?autoplay=1&mute=1&loop=1&playlist=xFwJKydc8Hk&rel=0&modestbranding=1"
-      title="Demo Reel"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <p>
-    <small>
-      Views: 3 • Likes: 0 • 
-      <a href="https://www.youtube.com/channel/UCDCXLm_zfMYOzfcuzZmYiTA" target="_blank">
-        YouTube Channel
-      </a>
-    </small>
-  </p>
-
+    <!-- Auto-playing YouTube Video (muted, loop, no controls) -->
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/xFwJKydc8Hk?autoplay=1&mute=1&loop=1&playlist=xFwJKydc8Hk&controls=0&rel=0&modestbranding=1&playsinline=1" 
+            title="Codélandes Demo Reel" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
